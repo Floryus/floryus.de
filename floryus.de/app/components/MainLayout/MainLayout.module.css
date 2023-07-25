@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+.gridContainer {
+    width: 100vw;
+    height: 100vh;
+    padding: 10vh;
+    display: grid;
+    grid-template-areas:
+      'hero cta '
+      'hero tech '
+      'hero tech '
+      'projects tech '
+      'projects tech '
+      'projects tech '
+      'projects tech '
+      'projects tech ';
+    gap: 10px;
+    padding: 10px;
+    font-family: 'Space Mono', monospace;
+  }
+
+.hero {
+    grid-area: hero;
+    border: 10px solid #29FF65;
+}
+.contact {
+    grid-area: cta;
+    background: #FFF;
+    border: 10px solid #FFF;
+}
+.projects {
+    grid-area: projects;
+    border: 10px solid #DFFF1C;
+}
+.tech {
+    grid-area: tech;
+    border: 10px solid #FF1CDB;
+}

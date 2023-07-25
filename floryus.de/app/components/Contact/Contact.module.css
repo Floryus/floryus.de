@@ -1,0 +1,50 @@
+.container {
+    color: #191919;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftContainer {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.i {
+    font-style: italic;
+}
+
+
+.rightContainer {
+    display: inline;
+    text-align: right;
+}
+.together {
+    font-size: calc(25px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 20px;
+}
+.work {
+    font-size: calc(25px);
+    font-style: bold;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+    transition: all 2s ease-in-out;
+    display: inline;
+}
+.work:hover {
+    cursor: pointer;
+}
+.workAnimation {
+    transition: all 2s ease-in-out;
+    display: inline;
+    
+}
+.workAnimation:hover {
+    letter-spacing: 20px;
+    cursor: pointer;
+}

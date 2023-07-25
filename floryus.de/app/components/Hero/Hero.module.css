@@ -1,0 +1,94 @@
+.gridContainer {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+      'pic text text'
+      'pic text text'
+      'pic links cta';
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.pic {
+    grid-area: pic;
+    background-color: white;
+}
+.img {
+    width: calc(2010px / 20);
+    height: calc(3200px / 20);
+    object-fit: contain;
+}
+
+
+.text {
+    grid-area: text;
+    color: #FFF;
+}
+.header {
+    font-size: calc(44px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.accent {
+    color: #29FF65;
+    font-size: calc(44px);
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    display: inline;
+}
+.subheader {
+    color: #FFF;
+    font-size: calc(25px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.links {
+    grid-area: links;
+    display: inline;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.icon {
+    display: inline;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+
+.cta {
+    grid-area: cta;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.button {
+    background-color: white;
+    color: #191919;
+    border-radius: 1000px;
+    font-size: calc(25px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 30px;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
