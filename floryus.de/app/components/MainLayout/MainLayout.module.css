@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
 .gridContainer {
-    width: 100vw;
-    height: 100vh;
-    padding: 10vh;
+    
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
     display: grid;
+
+    width: 100vw;
+    height: 95vh;
     grid-template-areas:
       'hero cta '
-      'hero tech '
       'hero tech '
       'projects tech '
       'projects tech '
@@ -17,7 +20,9 @@
     gap: 10px;
     padding: 10px;
     font-family: 'Space Mono', monospace;
-  }
+    grid-template-columns: 10fr 9fr;
+        
+}
 
 .hero {
     grid-area: hero;
@@ -35,4 +40,51 @@
 .tech {
     grid-area: tech;
     border: 10px solid #FF1CDB;
+}
+
+
+.footer {
+    flex-shrink: 0;
+    max-height: 10vh;
+}
+.footerText {
+    color: #534646;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.footerTextA:hover {
+    color: #29FF65;
+    cursor: pointer;
+}
+.footerTextB:hover {
+    color: #DFFF1C;
+    cursor: pointer;
+}
+.footerTextC:hover {
+    color: #FF1CDB;
+    cursor: pointer;
+}
+.footerTextD:hover {
+    color: #FFF;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 850px) {
+    .gridContainer {
+        grid-template-areas:
+        'hero'
+        'cta'
+        'projects'
+        'tech';
+        grid-template-columns: 100%;
+        width: auto;
+    }
+
+    .footer {
+        display: none;
+    }
 }

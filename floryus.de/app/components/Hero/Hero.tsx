@@ -1,20 +1,23 @@
 import Image from "next/image";
 import styles from "./Hero.module.css";
 
-import avatar from "../../../public/avatar.png";
-
 import github from "../../../public/icons/github.svg";
 import linkedin from "../../../public/icons/linkedin.svg";
 import twitter from "../../../public/icons/twitter.svg";
 import mail from "../../../public/icons/mail.svg";
 
+import avatar from "../../../public/avatar.png";
+
 export default function Hero() {
   return (
     <div className={styles.gridContainer}>
-      <div className={styles.pic}></div>
+      <div className={styles.pic}>
+        {/* <Image src={avatar} alt="That's me!" /> */}
+      </div>
       <div className={styles.text}>
         <h1 className={styles.header}>
-          Hi 👋, <br />
+          Hi👋
+          <br />
           I’m <p className={styles.accent}>Florian.</p>
         </h1>
         <h2 className={styles.subheader}>

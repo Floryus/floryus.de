@@ -2,49 +2,90 @@
     color: #191919;
     margin-top: auto;
     margin-bottom: auto;
-    padding: 10px;
     display: flex;
     justify-content: space-between;
+    height: 100%;
 }
 
 .leftContainer {
     margin-top: auto;
     margin-bottom: auto;
+    justify-content: center;
+
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+
+    font-family: Space Mono;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%; /* 25px */
 }
+
 .i {
-    font-style: italic;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+.italic {
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+.italic:hover {
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
 }
 
 
 .rightContainer {
-    display: inline;
     text-align: right;
+    vertical-align: middle;
+    padding: auto;
+
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
 }
 .together {
-    font-size: calc(25px);
+    font-size: 40px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    padding-left: 20px;
+
+    text-align: right;
+    font-family: Space Mono;
+    line-height: 140%;
+    letter-spacing: 20px;
 }
 .work {
-    font-size: calc(25px);
-    font-style: bold;
-    font-weight: 600;
-    line-height: normal;
-    text-decoration: none;
-    transition: all 2s ease-in-out;
     display: inline;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 20px;
 }
 .work:hover {
     cursor: pointer;
 }
-.workAnimation {
-    transition: all 2s ease-in-out;
-    display: inline;
-    
-}
-.workAnimation:hover {
-    letter-spacing: 20px;
-    cursor: pointer;
+
+
+@media only screen and (max-width: 950px) {
+    .together {
+        font-size: 30px;
+        letter-spacing: 8px;
+    }
+    .work {
+        font-size: 30px;
+        letter-spacing: 8px;
+    }
 }

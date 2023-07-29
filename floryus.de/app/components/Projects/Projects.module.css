@@ -1,0 +1,84 @@
+.container {
+    padding: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    gap: 10px;
+    grid-template-areas: 
+    'title break' 
+    'riddle break'
+    'riddle button';
+    width: 100%;
+}
+
+.h1 {
+    grid-area: title;
+    color: #FFF;
+    font-size: 28px;
+    font-family: Space Mono;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+}
+
+
+.projectContainer1 {
+    grid-area: riddle;
+    border: 5px solid #FFF;
+    padding: 10px;
+}
+.projectContainer2 {
+    grid-area: break;
+    border: 5px solid #FFF;
+    padding: 10px;
+}
+
+
+
+.title {
+    color: #DFFF1C;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.i {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+.text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.button {
+    grid-area: button;
+    color: white;
+    border-radius: 1000px;
+    font-size: calc(20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    padding: 0px 10px;
+
+    transition: all 1s ease-in-out;   
+
+}
+.button:hover {
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
