@@ -11,9 +11,6 @@ import avatar from "../../../public/avatar.png";
 export default function Hero() {
   return (
     <div className={styles.gridContainer}>
-      <div className={styles.pic}>
-        {/* <Image src={avatar} alt="That's me!" /> */}
-      </div>
       <div className={styles.text}>
         <h1 className={styles.header}>
           Hi👋
@@ -37,6 +34,9 @@ export default function Hero() {
         <a>
           <Image className={styles.icon} src={mail} alt="Mail" />
         </a>
+      </div>
+      <div className={styles.pic}>
+        <Image className={styles.img} src={avatar} alt="That's me!" />
       </div>
       <div className={styles.cta}>
         <div className={styles.button}>
